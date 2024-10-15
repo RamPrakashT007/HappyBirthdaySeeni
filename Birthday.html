@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Seeni</title>
+
+    <!-- External Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
+
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background-image"></div>
+    </div>
+    <div class="container">
+        <div class="transition-text">Happy Birthday Seeni! 🥳</div>
+        <div id="text-container">
+            <h1 id="line1" style="color:#000000"></h1>
+            <h1 id="line2" style="color:red" align="center"></h1>
+            <h2 id="line3" style="color:black"></h2>
+        </div>
+    
+        <script>
+            // Function to type text line by line
+            function typeText(element, text, callback) {
+                let i = 0;
+                function typeChar() {
+                    if (i < text.length) {
+                        element.innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(typeChar, 100); // Adjust typing speed
+                    } else if (callback) {
+                        callback(); // Call the next function when the current line is done
+                    }
+                }
+                typeChar();
+            }
+    
+            // Start typing each line in sequence
+            window.onload = function() {
+                const line1 = document.getElementById("line1");
+                const line2 = document.getElementById("line2");
+                const line3 = document.getElementById("line3");
+    
+                typeText(line1, "HELLO VIGNESH!", function() {
+                    typeText(line2, "Many More Happy Returns Of The Day🥳", function() {
+                        typeText(line3, "Here I have collected some of our Memorable Days");
+                    });
+                });
+            };
+            
+        </script>
+       
+    <body>
+    <div class ="image-container">
+    <h2 class = "side-space">When we went to the hostel terrace for the first time(23.07.2019)</h2>
+    <img src="Seeni (1).jpeg"align="center" width="700" height="400">
+    <h2 class = "side-space">Art of Living(26.07.2019)</h2>
+    <img src="Seeni (2).jpeg"align="center" width="500" height="300">
+    <h2 class = "side-space">Going out for food(18.10.2019)</h2>
+    <img src="Seeni (4).jpeg"align="center" width="450" height="400">
+    <h2 class = "side-space">A Day in Thirupparankundram(14.10.2019)</h2>
+    <img src="Seeni (5).jpeg"align="center" width="700" height="500">
+    <h2 class = "side-space">B3 Classroom❤️</h2>
+    <img src="Seeni (10).jpeg"align="center" width="500" height="400">
+    <h2 class = "side-space">E7 Family❤️</h2>
+    <img src="Seeni (12).jpeg"align="center" width="400" height="300">
+    <h2 class = "side-space">EG Attrocities(19.10.2019)</h2>
+    <img src="Seeni (16).jpeg"align="center" width="500" height="300">
+
+    <h2 class = "side-space">Watching Movie in room(28.03.2020)</h2>
+    <img src="Seeni (2).jpg"align="center" width="500" height="350">
+    <h2 class = "side-space">Temple Visits😜</h2>
+    <img src="Seeni (7).jpeg"align="center" width="700" height="400">
+
+    <h2 class = "side-space">Those Fun we had while cutting cake on nithin birthday(23.03.2022)</h2>
+    <img src="1.jpeg"align="center" width="500" height="300">
+
+    <h2 class = "side-space">When you predicted Covid before everyone😂😂</h2>
+    <img src="Seeni (9).jpeg"align="center" width="600" height="400"
+   
+    <h2 class = "side-space">When we celebrated our friend's birthday(23.08.2022)</h2>
+        <img src="22.jpeg"align="center" width="550" height="400">
+
+    <h2 class = "side-space">Exploring Madurai(12.9.2022)</h2>
+    <img src="23.jpeg"align="center" width="500" height="400">
+
+>
+    <h2 class = "side-space">Sleeping😂😂</h2>
+    <img src="Seeni (11).jpeg"align="center" width="550" height="400">
+
+
+    <h2 class = "side-space">Going for treats admist classes😂😂)</h2>
+    <img src="Seeni (13).jpeg"align="center" width="500" height="400">
+
+    <br>
+</br>
+    <h3 align = center>Some Memorable Days</h3>
+    <div class="image-two">
+    <img class ="image"src="Seeni (1).jpg"align="center" width="200" height="200">
+    <img class ="image"src="Seeni (6).jpeg"align="center" width="200" height="200">
+    <img class ="image"src="Seeni (8).jpeg"align="center" width="300" height="200">
+    </div>
+</div>
+    <h3 align = left>Once again many more happy returns of the day Seeni.I know I have missed some of our memories here. I Wish I was there with you to celebrate.Sorry🙁for not being with you on your birthday this year. I hope this brings a little smile to your face. Hopefully next year we will celebrate your birthday together.You are a great person Seeni,Take Care of your health .Have a wonderful year ahead❤️🥳.</h3>
+    <h3 align = right>With Love - Ram Prakash T❤️</h3>
+    
+    <div id="container">
+        <div id="left-column">
+            <p id="animated-text"></p>
+        </div>
+        <div id="right-column">
+            <p id="line1"></p>
+            <p id="line2"></p>
+        </div>
+    </div>
+
+    <audio id="background-audio" autoplay loop>
+        <source src="kattu-kuyilu-manasukulla-songwhatsapp-statustamil-lyricsfriendship-status.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    <!-- Add an image container -->
+    <div id="image-container"></div>
+
+    <div id="balloon-container"></div>
+
+    <!-- Link to External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
